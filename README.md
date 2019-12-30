@@ -45,13 +45,13 @@ dictionary.  The key is the relative path to the picture and the data are three 
  
  There are eight cases. The first and fifth are the common cases.
  
-| In .picasa   | in originals | in exports | Action |
-| :---: | :---: | :---: | :--- |
-|       Y      |       Y      |      Y     | Normal, picture edited - Save both the exported and original versions |
-|       Y      |       Y      |      N     | Warning, the picture should have been in exports.  Save the  original |
-|       Y      |       N      |      Y     | Warning, all pictures should be in originals.  Save the exported version |
-|       Y      |       N      |      N     | Warning, the picture doesn't exist anywhere |
-|       N      |       Y      |      Y     | Normal, picture unretouched - Save the original, ignore exported version |
-|       N      |       Y      |      N     | Warning, all pictures should be in the exports. Save the original |
-|       N      |       N      |      Y     | Warning, picture should be in the originals.  Save the exported version. |
-|       N      |       N      |      N     | Case shouldn't exist |
+| In .picasa   | in originals | in exports | Meaning | Action |
+| :---: | :---: | :---: | :--- | :--- |
+|       Y      |       Y      |      Y     | Normal, picture edited | Save both the exported and original versions |
+|       Y      |       Y      |      N     | Warning, the picture should have been in exports | Save the  original |
+|       Y      |       N      |      Y     | Warning, all pictures should be in originals | Save the exported version |
+|       Y      |       N      |      N     | Warning, the picture doesn't exist anywhere | None |
+|       N      |       Y      |      Y     | Normal, picture unretouched | Save the original, ignore exported version |
+|       N      |       Y      |      N     | Warning, all pictures should be in the exports | Save the original |
+|       N      |       N      |      Y     | Warning, picture should be in the originals | Save the exported version. |
+|       N      |       N      |      N     | Case shouldn't exist | None |
